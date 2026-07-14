@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jafy | Mis proyectos</title>
+  <style>
+    :root{--fondo:#07111f;--panel:rgba(15,23,42,.82);--tarjeta:rgba(30,41,59,.85);--texto:#f8fafc;--suave:#cbd5e1;--azul:#38bdf8;--violeta:#8b5cf6;--rosa:#fb7185}
+    *{box-sizing:border-box;scroll-behavior:smooth}
+    body{margin:0;min-height:100vh;font-family:Arial,sans-serif;color:var(--texto);background:radial-gradient(circle at 15% 15%,rgba(56,189,248,.2),transparent 30%),radial-gradient(circle at 85% 10%,rgba(139,92,246,.2),transparent 30%),linear-gradient(180deg,#07111f,#0f172a);overflow-x:hidden}
+    .estrellas,.estrellas::before,.estrellas::after{position:fixed;inset:0;pointer-events:none;content:"";background-image:radial-gradient(white 1px,transparent 1px),radial-gradient(white 1px,transparent 1px);background-size:70px 70px,110px 110px;background-position:0 0,35px 40px;opacity:.16;animation:moverEstrellas 35s linear infinite;z-index:-1}
+    .estrellas::before{opacity:.1;transform:scale(1.25);animation-duration:50s}.estrellas::after{opacity:.07;transform:scale(1.6);animation-duration:70s}
+    @keyframes moverEstrellas{from{transform:translateY(0)}to{transform:translateY(80px)}}
+    header{min-height:82vh;display:grid;place-items:center;text-align:center;padding:50px 20px}.hero{max-width:900px}.marca{display:inline-block;margin-bottom:18px;padding:9px 17px;border:1px solid rgba(255,255,255,.16);border-radius:999px;background:rgba(255,255,255,.05);color:var(--azul);font-weight:bold;letter-spacing:1px}
+    h1{margin:0 0 18px;font-size:clamp(54px,10vw,105px);line-height:.95}.degradado{background:linear-gradient(90deg,var(--azul),#a78bfa,var(--rosa));-webkit-background-clip:text;color:transparent}.hero p{max-width:720px;margin:0 auto 30px;color:var(--suave);font-size:21px;line-height:1.7}
+    .boton-principal{display:inline-block;padding:15px 26px;border-radius:13px;color:white;text-decoration:none;font-weight:bold;background:linear-gradient(90deg,#0284c7,var(--violeta));box-shadow:0 12px 30px rgba(56,189,248,.25);transition:.25s}.boton-principal:hover{transform:translateY(-4px) scale(1.03)}
+    main{max-width:1180px;margin:auto;padding:20px 20px 90px}.estadisticas{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:75px}.estadistica{padding:22px;text-align:center;border-radius:18px;background:var(--panel);border:1px solid rgba(255,255,255,.09);box-shadow:0 12px 30px rgba(0,0,0,.18)}.estadistica strong{display:block;font-size:34px;color:var(--azul)}.estadistica span{color:var(--suave)}
+    .titulo-seccion{text-align:center;margin-bottom:36px}.titulo-seccion h2{margin:0 0 10px;font-size:42px}.titulo-seccion p{margin:0;color:var(--suave);font-size:18px}
+    .proyectos{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px}.proyecto{overflow:hidden;border-radius:24px;background:var(--tarjeta);border:1px solid rgba(255,255,255,.1);box-shadow:0 16px 38px rgba(0,0,0,.28);transition:.28s}.proyecto:hover{transform:translateY(-8px);border-color:rgba(56,189,248,.5)}.miniatura{height:190px;display:grid;place-items:center;font-size:82px;background:linear-gradient(135deg,rgba(56,189,248,.2),rgba(139,92,246,.24))}.contenido{padding:23px}.etiqueta{display:inline-block;margin-bottom:12px;padding:6px 10px;border-radius:999px;background:rgba(34,197,94,.13);color:#86efac;font-size:13px;font-weight:bold}.contenido h3{margin:0 0 10px;font-size:25px}.contenido p{min-height:78px;margin:0 0 18px;color:var(--suave);line-height:1.55}.boton-proyecto{display:block;width:100%;padding:13px;text-align:center;border-radius:11px;text-decoration:none;color:white;font-weight:bold;background:#2563eb;transition:.2s}.boton-proyecto:hover{background:#1d4ed8;transform:scale(1.02)}
+    .sobre-mi{margin-top:80px;padding:38px 28px;text-align:center;border-radius:24px;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.1)}.sobre-mi h2{margin-top:0;font-size:34px}.sobre-mi p{max-width:800px;margin:auto;color:var(--suave);font-size:18px;line-height:1.75}footer{padding:30px 20px;text-align:center;color:var(--suave);border-top:1px solid rgba(255,255,255,.08)}
+    @media(max-width:700px){header{min-height:72vh}.estadisticas{grid-template-columns:1fr}.miniatura{height:160px}}
+  </style>
+</head>
+<body>
+  <div class="estrellas"></div>
+  <header><div class="hero"><div class="marca">💻 JAFY STUDIOS</div><h1>Mis proyectos <span class="degradado">web</span></h1><p>Hola, soy Jafy. Estoy aprendiendo a crear páginas y juegos con HTML, CSS y JavaScript. Acá podés conocer todos los proyectos que hice.</p><a class="boton-principal" href="#mis-proyectos">🚀 Ver mis proyectos</a></div></header>
+  <main>
+    <section class="estadisticas"><div class="estadistica"><strong>5</strong><span>Proyectos publicados</span></div><div class="estadistica"><strong>3</strong><span>Tecnologías aprendidas</span></div><div class="estadistica"><strong>100%</strong><span>Hecho con creatividad</span></div></section>
+    <section id="mis-proyectos"><div class="titulo-seccion"><h2>🚀 Mis creaciones</h2><p>Tocá un botón para abrir el proyecto.</p></div><div class="proyectos">
+      <article class="proyecto"><div class="miniatura">💙</div><div class="contenido"><span class="etiqueta">Página especial</span><h3>Para mi papá</h3><p>Una página con una foto, un mensaje especial y un botón dedicado a mi papá.</p><a class="boton-proyecto" href="https://jafygames12.github.io/para-papa/" target="_blank">Ver página</a></div></article>
+      <article class="proyecto"><div class="miniatura">❤️</div><div class="contenido"><span class="etiqueta">Página especial</span><h3>Para mi mamá</h3><p>Una página con una foto, un mensaje de amor y corazones animados.</p><a class="boton-proyecto" href="https://jafygames12.github.io/para-mam-/" target="_blank">Ver página</a></div></article>
+      <article class="proyecto"><div class="miniatura">🎮</div><div class="contenido"><span class="etiqueta">Videojuego</span><h3>Atrapá el botón</h3><p>Un juego con monedas, movimiento suave y una tienda de mejoras.</p><a class="boton-proyecto" href="https://jafygames12.github.io/juego-de-atrapar-el-boton/" target="_blank">Jugar</a></div></article>
+      <article class="proyecto"><div class="miniatura">💇‍♀️</div><div class="contenido"><span class="etiqueta">Sitio profesional</span><h3>Peluquería</h3><p>Una página para un negocio con servicios, precios, galería y turnos.</p><a class="boton-proyecto" href="https://jafygames12.github.io/peluqueria-1-de-jafy/" target="_blank">Ver sitio</a></div></article>
+      <article class="proyecto"><div class="miniatura">🍔</div><div class="contenido"><span class="etiqueta">Tienda de práctica</span><h3>Jafy Food</h3><p>Una tienda de comida con productos, carrito y pago completamente simulado.</p><a class="boton-proyecto" href="https://jafygames12.github.io/Jafy-food-compra-comidas-gratis-/" target="_blank">Ver tienda</a></div></article>
+    </div></section>
+    <section class="sobre-mi"><h2>👋 Sobre mí</h2><p>Empecé creando páginas sencillas y después aprendí a agregar imágenes, botones, animaciones, formularios, carritos de compra y videojuegos. Mi próximo objetivo es seguir mejorando y crear proyectos todavía más grandes.</p></section>
+  </main>
+  <footer>© 2026 Jafy Studios — Página creada por Jafy.</footer>
+</body>
+</html>
